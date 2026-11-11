@@ -54,3 +54,7 @@ sudo python3 arpspoof.py 192.168.64.6 192.168.64.1
 
 Run `arp -a` on Metasploitable2 before and during the attack. Before, the gateway's IP maps to its real MAC address. During the attack, that same entry should show the attacker's (Kali's) MAC address instead — confirming the ARP cache has been successfully poisoned.
 
+![Before attack - real gateway MAC](screenshots/01-before-arp-table.png)
+![Attack running](screenshots/02-arpspoof-running.png)
+![After attack - poisoned gateway MAC](screenshots/03-after-arp-table.png)
+
